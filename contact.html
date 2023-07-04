@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Serif+4:opsz@8..60&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        
+      }
+      .container::before {
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 100%;
+        background-image: url(images/mountain2.jpg);
+        background-size: 100%;
+        filter: brightness(40%);
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      h1 {
+        font-size: 100px;
+        margin: 0px;
+        color: white;
+      }
+      .info{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin: 100px auto;
+      }
+      .info>p{
+        font-family: 'Noto Sans', sans-serif;
+        margin: 0 auto 20px auto;
+      }
+      h2{
+        font-size: 35px;
+        margin: 20px auto;
+        font-family: 'Noto Sans', sans-serif;
+      }
+      form{
+        border: 2px solid black;
+        padding: 40px;
+        font-family: 'Bree Serif', serif;
+        /* width:50%; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+      }
+      p{
+        font-size: 20px;
+      }
+      input{
+        margin: 10px 0 30px 0;
+        width: 400px;
+        height:30px;
+      }
+      #submitform{
+        color: white;
+        background-color: rgb(15, 15, 70);
+        height: 40px;
+        font-size: 20px;
+      }
+      #direct{
+        margin: 30px auto;
+        font-family: 'Noto Sans', sans-serif;
+      }
+      footer{
+    background-color: black;
+    width: 100%;
+    height : 500px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px 100px 50px 100px; */
+}
+/* footer::before{
+    background-color: black;
+} */
+#firstpart{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid yellow; */
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#l, #c, #rp, #gallery{
+    /* border: 2px solid red; */
+    width: 250px;
+    height: 300px;
+}
+#l{
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    
+}
+#l img{
+    height : 180px;
+    width: 180px;
+    margin: -20px 0px 0px -32px;
+}
+#l p{
+    line-height: 30xp;
+}
+#c,#rp,#gallery{
+    color :white;
+}
+#c h6,#rp h6{
+    font-family: 'Bree Serif', serif;
+font-family: 'Source Serif 4', serif;
+font-size: 20px;
+margin-left: 25px;
+}
+#c ul, #rp ul{
+    display: flex;
+    flex-direction: column; 
+    margin: 0;
+    padding: 0;
+}
+#c ul a, #rp ul a{
+    font-size: 15px;
+    line-height: 30px;
+}
+#secondpara{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+}
+#p1{
+    margin-left: 100px;
+    font-size: 13px;
+}
+#p2{
+    margin-right: 100px;
+    font-size: 13px;
+}
+#fimg img{
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;
+}
+#fimg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 25px;
+}
+#gallery h6{
+    font-family: 'Bree Serif', serif;
+font-family: 'Playfair Display', serif;
+font-size: 20px;
+}
+.fpara{
+    color : white;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 30px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/tilogo.png" alt="" />
+      <h1>Contact Us</h1>
+    </div>
+    <div class="info">
+      <h2>Email us your query</h2>
+      <p>We will get back to you on this!</p>
+      <form action="message.html" name="myForm" onsubmit="return validate()">
+        <div>
+            <p>Your name</p>
+            <input type="text" id="name"/>
+            <p>Your email</p>
+            <input type="email" id="email"/>
+            <p>Subject</p>
+            <input type="text" id="subject" />
+            <p>Your Query</p>
+            <input type="text" name="mssg" id="msg" />
+        </div>
+        
+        <input type="submit" id="submitform"  >
+      </form>
+      <div id="direct">
+        <p>Or directly contact us using our toll-free number : 985677XXXX</p>
+
+      </div>
+    </div>
+    <footer>
+      <div id="firstpart">
+          <div id="l">
+              <img src="images/tilogo.png" alt="">
+              <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+          </div>
+          <div id="c">
+              <h6>Categories</h6>
+                  <ul>
+                      <li><a target="_blank">Africa(3)</a></li>
+                      <li><a target="_blank">Asia(5)</a></li>
+                      <li><a target="_blank">Europe(5)</a></li>
+                      <li><a target="_blank">North America(2)</a></li>
+                      <li><a target="_blank">South Africa(2)</a></li>
+                  </ul>
+          </div>
+          <div id="rp">
+              <h6>Recent Posts</h6>
+                  <ul>
+                      <li><a target="_blank">African Wildlife</a></li>
+                      <li><a target="_blank">Great Pyramids of Giza</a></li>
+                      <li><a target="_blank">Desert Safari in UAE</a></li>
+                      <li><a target="_blank">A day on the Mountains</a></li>
+                      <li><a target="_blank">Christ the Saviour-Rio De Janeiro</a></li>
+                  </ul>
+          </div>
+          <div id="gallery">
+              <h6>Gallery</h6>
+              <div id="fimg">
+                  <img src="images/img1.jpg" alt="">
+                  <img src="images/img2.jpg" alt="">
+                  <img src="images/img3.jpg" alt="">
+                  <img src="images/img4.jpg" alt="">
+                  <img src="images/img5.jpg" alt="">
+                  <img src="images/img6.jpg" alt="">
+              </div>
+          </div>
+      </div>
+      <div id="secondpara">
+          <div>
+              <p class="fpara" id="p1">Copyright © 2022 Wanderlust Travel Diary</p>
+          </div>
+          <div>
+              <p class="fpara" id="p2">Powered by Wanderlust Travel Diary</p>
+          </div>
+      </div>
+  </footer>
+  </body>
+  
+  <script>
+        
+    function validate(){
+        
+        let name = document.getElementById('name');
+        if(name.value==''){
+            name.focus();
+            alert("Please provide your name");
+            return false;
+        }
+        
+        let email = document.getElementById('email');
+        if(email.value=='')
+        {
+            email.focus();
+            alert("Please provide your email");
+            return false;
+        }
+       
+        let sub = document.getElementById('subject');
+        if(sub.value==''){
+            subject.focus();
+            returnval = false;
+            alert("Please provide the subject");
+            return returnval;
+        }
+        
+        let message = document.getElementById('msg');
+        if(message.value==''){
+            message.focus();
+            alert("Please provide a message");
+            return false;
+        }
+        
+    }
+</script>
+</html>
